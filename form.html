@@ -40,66 +40,68 @@
         <h2 class="program-selection__title">Подбор программы</h2>
         <h3 class="program-selection__text">Заполните анкету, и мы подберем
           программу питания для вашего кота</h3>
-        <form class="program-selection__checklist checklist">
-          <ul class="checklist__list">
-            <li class="checklist__item">
-              <label class="checklist__name" for="name-cat">ИМЯ:*</label>
-              <input class="checklist__name-form" type="text" name="name-cat" value="Барсик" id="name-cat" required>
+        <form class="program-selection__questionnaire questionnaire" action="https://echo.htmlacademy.ru/"
+          method="post">
+          <ul class="questionnaire__cat-data cat-data">
+            <li class="cat-data__item">
+              <label class="cat-data__name" for="name-cat">ИМЯ:*</label>
+              <input class="cat-data__name-form" type="text" name="name-cat" value="Барсик" id="name-cat" required>
             </li>
-            <li class="checklist__item">
-              <label class="checklist__name" for="wt-cat">Вес (кг):*</label>
-              <input class="checklist__name-form" type="number" name="weight-cat" value="7" id="wt-cat" required>
+            <li class="cat-data__item">
+              <label class="cat-data__name" for="wt-cat">Вес (кг):*</label>
+              <input class="cat-data__name-form" type="number" name="weight-cat" value="7" id="wt-cat" required>
             </li>
-            <li class="checklist__item">
-              <label class="checklist__name" for="age-cat">Возраст (лет):</label>
-              <input class="checklist__name-form" type="number" name="age-cat" value="7" id="age-cat" required>
+            <li class="cat-data__item">
+              <label class="cat-data__name" for="age-cat">Возраст (лет):</label>
+              <input class="cat-data__name-form" type="number" name="age-cat" value="7" id="age-cat" required>
             </li>
           </ul>
-          <div class="checklist-goal">
-            <fieldset class="checklist-goal__form">
+          <div class="questionnaire__purpose-program purpose-program">
+            <fieldset class="purpose-program__form">
               <legend class="visually-hidden">Цель программы питания.</legend>
-              <ul class="checklist-goal__list">
-                <li class="checklist-goal__item">
-                  <input class="checklist-goal__control" type="radio" name="goal-program" value="program-slim"
+              <ul class="purpose-program__list reset-list">
+                <li class="purpose-program__item">
+                  <input class="purpose-program__form" type="radio" name="purpose-program" value="program-slim"
                     checked="checked">
-                  <span class="checklist-goal__mark"></span>
-                  <span class="checklist-goal__name">Похудение</span>
+                  <span class="purpose-program__mark"></span>
+                  <span class="purpose-program__name">Похудение</span>
                 </li>
-                <li class="checklist-goal__item">
-                  <input class="checklist-goal__control" type="radio" name="goal-program" value="program-pro">
-                  <span class="checklist-goal__mark"></span>
-                  <span class="checklist-goal__name">Набор массы</span>
+                <li class="purpose-program__item">
+                  <input class="purpose-program__form" type="radio" name="purpose-program" value="program-pro">
+                  <span class="purpose-program__mark"></span>
+                  <span class="purpose-program__name">Набор массы</span>
                 </li>
-                <li class="checklist-goal__item">
-                  <input class="checklist-goal__control" type="radio" name="goal-program" value="need-your-advice">
-                  <span class="checklist-goal__mark"></span>
-                  <span class="checklist-goal__name">Не знаю (Нужен ваш совет)</span>
+                <li class="purpose-program__item">
+                  <input class="purpose-program__form" type="radio" name="purpose-program" value="need-your-advice">
+                  <span class="purpose-program__mark"></span>
+                  <span class="purpose-program__name">Не знаю (Нужен ваш совет)</span>
                 </li>
               </ul>
             </fieldset>
           </div>
-          <div class="checklist__contact contact">
+          <div class="questionnaire__contact contact">
             <h2 class="contact__title">Контактные данные
               (владельца кота)</h2>
-            <ul class="contact__list">
+            <ul class="contact__list reset-list">
               <li class="contact__item">
-                <label class="checklist__name" for="email">E-mail:*</label>
-                <input class="checklist__name-form" placeholder="kuklachev@gmail.com" type="email" name="email"
-                  required>
+                <label class="contact__label contact__label--email" for="email">E-mail:*</label>
+                <input class="contact__input contact__input--email" placeholder="kuklachev@gmail.com" type="email"
+                  name="email" id="email" required>
               </li>
               <li class="contact__item">
-                <label class="checklist__name" for="email">Телефон:*</label>
-                <input class="checklist__name-form" placeholder="8 (960) 900-60-90" type="tel" name="phone" required>
+                <label class="contact__label" for="email">Телефон:*</label>
+                <input class="contact__input contact__input--email" placeholder="8 (960) 900-60-90" type="tel"
+                  name="phone" required>
               </li>
             </ul>
           </div>
-          <div class="checklist__comment comment">
-            <h2 class="comment__title">Комментарий</h2>
+          <div class="questionnaire__comment comment">
+            <h3 class="comment__title">Комментарий</h3>
             <textarea class="comment__skill-form" rows="10" cols="10"
               id="skills">Расскажите обо всех повaдках кота</textarea>
           </div>
-          <div class="checklist__additionally additionally">
-            <ul class="additionally__list">
+          <div class="questionnaire__additionally additionally">
+            <ul class="additionally__list reset-list">
               <li class="additionally__item">
                 <label class="additionally__control">
                   <input class="additionally__form" type="checkbox" name="additionally" value="fake-sugar"
@@ -131,14 +133,13 @@
               </li>
             </ul>
             <div class="additionally__send">
-              <button class="additionally__button" type="button">отправить заявку</button>
+              <button class="additionally__button" type="submit">отправить заявку</button>
               <p class="additionally__required">* — Обязательные поля</p>
             </div>
           </div>
         </form>
       </div>
     </section>
-    </div>
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
@@ -183,6 +184,7 @@
 
         </div>
       </div>
+    </div>
   </footer>
 </body>
 
