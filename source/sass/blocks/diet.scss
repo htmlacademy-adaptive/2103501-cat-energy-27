@@ -1,7 +1,5 @@
 .diet__item {
   background: #f2f2f2;
-  width: 280px;
-  height: 266px;
 }
 
 .diet__list {
@@ -13,6 +11,7 @@
 .diet__title {
   font-family: "Oswald", sans-serif;
   font-style: normal;
+  text-transform: uppercase;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;

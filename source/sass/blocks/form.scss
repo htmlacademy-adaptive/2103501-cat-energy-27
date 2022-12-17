@@ -1,0 +1,53 @@
+.form__list {
+  margin: 0;
+  padding: 0;
+}
+
+.form__label {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.form__control {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  box-sizing: border-box;
+  border: 1px solid #e7e7e7;
+}
+
+.form__name {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.form__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: #000000;
+}
+
+.form__description {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.form__required {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
