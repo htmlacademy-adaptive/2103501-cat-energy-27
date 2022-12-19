@@ -1,15 +1,13 @@
 .additional-product__title {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 500;
+  font-family: $main-font;
+  font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   color: #000000;
 }
 
 .additional-product__name {
-  font-family: inherit;
-  font-style: normal;
+  font-family: $main-font;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 16px;
@@ -18,8 +16,7 @@
 }
 
 .additional-product__pack {
-  font-family: "Lato", sans-serif;
-  font-style: normal;
+  font-family: $title-font;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
@@ -27,25 +24,21 @@
 }
 
 .additional-product__price {
-  font-family: "Lato", sans-serif;
-  font-style: normal;
+  font-family: $title-font;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   color: #444444;
 }
-/* aaaa *//* aaaa */
+
 .additional-product__bonus {
-  background: url("../../img/catalog/cat_in_backpack.png");
+  background: url("../img/catalog/cat_in_backpack.png");
   background-repeat: no-repeat;
   background-color: rgba(104, 183, 56, 0.85);
 }
 
-/* aaaa *//* aaaa */
-
 .additional-product__bonus-title {
-  font-family: "Lato", sans-serif;
-  font-style: normal;
+  font-family: $title-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
