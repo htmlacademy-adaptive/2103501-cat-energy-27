@@ -1,0 +1,53 @@
+.form__list {
+  margin: 0;
+  padding: 0;
+}
+
+.form__label {
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.form__control {
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  box-sizing: border-box;
+  border: 1px solid #e7e7e7;
+}
+
+.form__name {
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.form__title {
+  font-family: $main-font;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.form__description {
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.form__required {
+  font-family: $title-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
