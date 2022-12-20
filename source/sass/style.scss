@@ -1,7 +1,8 @@
-@import "blocks/fonts.scss";
-@import "blocks/global.scss";
-@import "blocks/mixins.scss";
-@import "blocks/variables.scss";
+@import "includes/fonts.scss";
+@import "includes/global.scss";
+@import "includes/mixins.scss";
+@import "includes/variables.scss";
+@import "includes/visually-hidden.scss";
 @import "blocks/additional-product.scss";
 @import "blocks/advantages.scss";
 @import "blocks/catalog-product-cards.scss";
@@ -17,7 +18,6 @@
 @import "blocks/main-nav.scss";
 @import "blocks/program-selection.scss";
 @import "blocks/product-card.scss";
-@import "blocks/visually-hidden.scss";
 @import "blocks/slider.scss";
 @import "blocks/tender.scss";
 @import "blocks/contact.scss";
