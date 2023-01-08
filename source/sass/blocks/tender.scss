@@ -35,3 +35,19 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
+.tender__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .tender__slogan {
+    color: #000000;
+  }
+
+  .tender__intro {
+    color: #000000;
+  }
+}

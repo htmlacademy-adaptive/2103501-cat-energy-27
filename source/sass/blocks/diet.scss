@@ -37,3 +37,21 @@
   color: #000000;
   text-decoration: none;
 }
+
+@media (min-width: $desktop-width) {
+  .diet__wrapper {
+    width: 1220px;
+  }
+
+  .diet__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .diet__item {
+    width: 570px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
