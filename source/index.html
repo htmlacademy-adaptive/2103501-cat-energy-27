@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font">
@@ -11,6 +12,7 @@
 
 <body class="main">
   <header class="main-header">
+    <div class="container main-header__container">
     <a class="main-header__logo">
       <img class="main-header__logo-image" src="img/icon-cat-logo-mobile.svg" width="33" height="38"
         alt="Логотип кота">
@@ -41,11 +43,12 @@
         </ul>
       </div>
     </nav>
+    </div>
   </header>
   <main class="main-container">
     <h1 class="visually-hidden">Кэт энерджи функциональное питание для котов</h1>
     <section class="tender">
-      <div class="tender__wrapper">
+      <div class=" container tender__container">
         <header class="tender__header">
           <h2 class="visually-hidden"> подбор программы питания коту</h2>
           <h2 class="tender__slogan">Функциональное
@@ -57,7 +60,7 @@
       </div>
     </section>
     <section class="diet">
-      <div class="diet__wrapper">
+      <div class="container diet__container">
         <h2 class="visually-hidden"> Секции Похудения</h2>
         <ul class="diet__list">
           <li class="diet__item">
@@ -91,7 +94,7 @@
       </div>
     </section>
     <section class="advantages">
-      <div class="advantages__container">
+      <div class="container advantages__container">
         <h2 class="visually-hidden"> Преимущества</h2>
         <h3 class="advantages__title">Как это работает</h3>
         <ul class="advantages__list">
@@ -117,7 +120,7 @@
       </div>
     </section>
     <section class="example">
-      <div class="example__container">
+      <div class="container example__container">
         <h2 class="visually-hidden">Результаты питания</h2>
         <h3 class="example__title">Живой пример</h3>
         <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
@@ -141,10 +144,16 @@
           </dl>
         <p class="example__costs">Затраты на питание: 15 000 РУБ. </p>
       </div>
+      <div class="slider__toggles">
+        <button class="slider__toggle slider__toggle--before" type="button">Было</button>
+        <div class="slider__control"><span class="slider__control-toggle"></span></div>
+        <button class="slider__toggle slider__toggle--after" type="button">Стало</button>
+      </div>
+
     </section>
   </main>
   <footer class="main-footer">
-    <div class="main-footer__wrapper">
+    <div class=" container main-footer__container">
       <div class="main-footer__contact contact">
         <b class="contact__title">приглашаем к сотрудничеству дилеров!</b>
         <p class="contact__text">ул. БольшаяКонюшенная, д. 19/8 <br>Санкт-Петербург</p>

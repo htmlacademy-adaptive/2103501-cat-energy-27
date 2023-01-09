@@ -23,6 +23,23 @@ img {
   text-decoration: none;
 }
 
+.container {
+  min-width: $mobile-width;
+  margin: 0 auto;
+  padding: 0 30px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+    min-width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: $desktop-width;
+  }
+}
+
+
 a {
   text-decoration: none;
 }
