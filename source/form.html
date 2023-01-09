@@ -12,6 +12,7 @@
 
 <body class="main">
   <header class="main-header">
+    <div class="container main-header__container">
     <a class="main-header__logo">
       <img class="main-header__logo-image" src="img/icon-cat-logo-mobile.svg" width="33" height="38"
         alt="Логотип кота">
@@ -42,17 +43,21 @@
         </ul>
       </div>
     </nav>
+    </div>
   </header>
-  <main class="main-container-form">
+
+  <main class="main-page">
+
     <h1 class="visually-hidden">Кэт энерджи Подбор программы</h1>
     <section class="main-container-form__program-selection program-selection">
-      <div class="program-selection__wrapper">
+      <div class="container program-selection__container">
         <h2 class="program-selection__title">Подбор программы</h2>
         <h3 class="program-selection__text">Заполните анкету, и мы подберем
           программу питания для вашего кота</h3>
         <form class="form" action="https://echo.htmlacademy.ru/"
           method="post">
-          <ul class="form__list">
+          <div class="container">
+          <ul class="form__list  form__list--program-selection">
             <li class="form__item">
               <label class="form__label form__label--text" for="name-cat">ИМЯ:*</label>
               <input class="form__control" type="text" name="name-cat" value="Барсик" id="name-cat" required>
@@ -66,10 +71,11 @@
               <input class="form__control" type="number" name="age-cat" value="7" id="age-cat" required>
             </li>
           </ul>
-          <div class="form__container">
+        </div>
+          <div class=" container form__container">
             <fieldset class="form__fieldset">
               <legend class="visually-hidden">Цель программы питания.</legend>
-              <ul class="form__list">
+              <ul class="form__list  form__list">
                 <li class="form__item">
                   <input class="form__control form__control--radio" type="radio" name="purpose-program" value="program-slim"
                     checked="checked">
@@ -89,7 +95,7 @@
               </ul>
             </fieldset>
           </div>
-          <div class="form__contact ">
+          <div class="container form__container">
             <h2 class="form__title">Контактные данные
               (владельца кота)</h2>
             <ul class="form__list reset-list">
@@ -105,14 +111,14 @@
               </li>
             </ul>
           </div>
-          <div class="form__comment comment">
+          <div class="container ">
             <h3 class="form__title">Комментарий</h3>
             <textarea class="form__control form__control--textarea" rows="10" cols="10"
               id="skills">Расскажите обо всех повaдках кота</textarea>
           </div>
-          <div class="form__wrapper ">
+          <div class= "container form__container ">
             <h3 class="form__title">Дополнительно</h3>
-            <ul class="form__list">
+            <ul class="form__list form__list--additionally">
               <li class="form__item">
                 <label class="form__label">
                   <input class="form__form" type="checkbox" name="additionally" value="fake-sugar"
@@ -153,16 +159,14 @@
     </section>
   </main>
   <footer class="main-footer">
-    <div class="main-footer__wrapper">
+    <div class="container main-footer__container">
       <div class="main-footer__contact contact">
         <b class="contact__title">приглашаем к сотрудничеству дилеров!</b>
         <p class="contact__text">ул. БольшаяКонюшенная, д. 19/8 <br>Санкт-Петербург</p>
       </div>
       <div class="main-footer__location">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1669894339877!5m2!1sru!2sru"
-          width="600" height="450" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1669894339877!5m2!1sru!2sru"
+          width="320" height="362" id="map" title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"> </iframe>
       </div>
       <div class="main-footer__logo">
         <a class="main-footer__logos" href="#">

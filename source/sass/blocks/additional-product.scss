@@ -34,7 +34,21 @@
 .additional-product__bonus {
   background: url("../img/catalog/cat_in_backpack.png");
   background-repeat: no-repeat;
+  background-size: cover;
   background-color: rgba(104, 183, 56, 0.85);
+  width: 280px;
+  height: 289px;
+
+  @media (min-width: $tablet-width) {
+    width: 707px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+    width: 244px;
+    height: 288px;
+  }
 }
 
 .additional-product__bonus-title {
