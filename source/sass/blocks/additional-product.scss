@@ -40,13 +40,11 @@
   height: 289px;
 
   @media (min-width: $tablet-width) {
-    width: 707px;
     height: 200px;
   }
 
   @media (min-width: $desktop-width) {
-
-    width: 244px;
+    margin-left: 80px;
     height: 288px;
   }
 }
@@ -77,5 +75,18 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+  }
+}
+
+.additional-product__buy-card {
+  @media (min-width: $tablet-width) {
+    grid-column: span 2;
+  }
+}
+
+.additional-product__table {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    margin-top: 80px;
   }
 }

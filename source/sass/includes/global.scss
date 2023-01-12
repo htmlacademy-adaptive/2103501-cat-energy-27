@@ -6,10 +6,6 @@
   margin: 0;
 }
 
-img {
-  height: 100%;
-}
-
 .button-buy {
   box-sizing: border-box;
   border: 0;
@@ -24,18 +20,17 @@ img {
 }
 
 .container {
-  min-width: $mobile-width;
   margin: 0 auto;
-  padding: 0 30px;
-  width: 100%;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 50px;
-    min-width: $tablet-width;
+    padding: 0 30px;
+    width: 668px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: $desktop-width;
+    padding: 0 50px;
+    width: 1220px;
   }
 }
 

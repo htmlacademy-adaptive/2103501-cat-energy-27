@@ -1,5 +1,9 @@
-.example__container {
+.example {
   background: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(0deg, #eaeaea 200px, transparent 200px, transparent 100%);
+  }
 }
 
 .example__title {
@@ -19,7 +23,6 @@
   line-height: 18px;
   color: #444444;
   width: 280px;
-  height: 108px;
 }
 
 .example__meaning {
