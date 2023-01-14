@@ -12,6 +12,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .tender__header {
+    width: 450px;
+  }
+}
+
 .tender__slogan {
   font-size: 36px;
   line-height: 36px;
@@ -45,18 +51,19 @@
 }
 
 .tender__container {
-  width: 320px;
-  height: 480px;
+  min-height: 480px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     padding: 64px 30px 0;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
     padding: 56px 0 52px 50px;
+    position: relative;
   }
 }
 
