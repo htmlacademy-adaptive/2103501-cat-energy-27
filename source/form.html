@@ -58,7 +58,7 @@
         <form class="form" action="https://echo.htmlacademy.ru/"
           method="post">
        <div class= "container form__wrapper">
-        <div class="container form__container">
+        <div class=" form__container">
           <ul class="form__list  form__list--program-selection">
             <li class="form__item">
               <label class="form__label form__label--text" for="name-cat">ИМЯ:*</label>
@@ -74,7 +74,7 @@
             </li>
           </ul>
         </div>
-          <div class=" container form__container">
+          <div class=" form__container">
             <fieldset class="form__fieldset">
               <legend class="visually-hidden">Цель программы питания.</legend>
               <ul class="form__list  form__list">
@@ -98,29 +98,43 @@
             </fieldset>
           </div>
         </div>
-          <div class="container form__container">
+        <div class="form__wrapper">
+        <div class="form__separator line">
+        <div class="container">
             <h2 class="form__title">Контактные данные
               (владельца кота)</h2>
-            <ul class="form__list form__list--contact-details reset-list">
-              <li class="form__item">
+      </div>
+        </div>
+        <div class="container">
+            <ul class="form__list reset-list">
+              <li class="form__item form__item--contact-details">
                 <label class="form__label form__label--email" for="email">E-mail:*</label>
                 <input class="form__control form__control--email" placeholder="kuklachev@gmail.com" type="email"
                   name="email" id="email" required>
               </li>
-              <li class="form__item">
+              <li class="form__item form__item--contact-details">
                 <label class="form__label form__label--phone" for="phone">Телефон:*</label>
                 <input class="form__control form__control--email" placeholder="8 (960) 900-60-90" type="tel" id="phone"
                   name="phone" required>
               </li>
             </ul>
+        </div>
           </div>
+          <div class="form__wrapper">
+            <div class="form__separator line">
           <div class="container ">
             <h3 class="form__title">Комментарий</h3>
+          </div>
+            </div>
             <textarea class="form__control form__control--textarea" rows="10" cols="10"
               id="skills">Расскажите обо всех повaдках кота</textarea>
           </div>
+          <div class="form__wrapper">
+            <div class="form__separator line">
           <div class= "container form__container ">
             <h3 class="form__title">Дополнительно</h3>
+          </div>
+            </div>
             <ul class="form__list form__list--additionally">
               <li class="form__item">
                 <label class="form__label">
